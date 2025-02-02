@@ -1,0 +1,84 @@
+/* Import Google Fonts for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #2c3e50;           /* Dark blue-gray background */
+  color: #ecf0f1;               /* Light, off-white text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main Container: Wider for a more spacious middle section */
+.webcam-container {
+  width: 90%;
+  max-width: 800px;             /* Increased max-width for a wider layout */
+  padding: 20px;
+  background: #34495e;          /* A slightly lighter dark tone for contrast */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+
+/* Video Feed Container */
+.webcam-wrapper {
+  background: #2c3e50;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Video Feed Styling */
+.webcam {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Button Container: Flexible spacing and wrapping for responsiveness */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Enlarged Button Styling */
+.controls button {
+  font-size: 1.4rem;             /* Bigger text */
+  padding: 20px 35px;            /* Increased padding for a larger clickable area */
+  min-width: 200px;              /* Wider buttons */
+  border: none;
+  border-radius: 6px;
+  background: #3498db;           /* Sleek blue accent */
+  color: #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.controls button:hover {
+  background: #2980b9;           /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.status, .description {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #ecf0f1;
+  word-wrap: break-word;
+}
